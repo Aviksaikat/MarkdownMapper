@@ -3,9 +3,9 @@ import argparse
 from pathlib import Path
 
 
-def generate_readme(directory):
+def generate_readme(directory: str, output_file: str):
     directory_path = Path(directory)
-    with open(directory_path / "README.md", "w") as f:
+    with open(directory_path / output_file, "w") as f:
         f.write("| Directory | Link |\n")
         # table header
         f.write("| --- | --- |\n")
@@ -27,5 +27,11 @@ if __name__ == "__main__":
         default=".",
         help="Directory to generate readme.md for. Defaults to current directory.",
     )
+    parser.add_argument(
+        "-o",
+        "--output",
+        default="README.md",
+        help="Output file name. Defaults to README.md.",
+    )
     args = parser.parse_args()
-    generate_readme(args.directory)
+    generate_readme(args.directory, args.output)

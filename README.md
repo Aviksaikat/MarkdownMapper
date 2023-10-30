@@ -2,18 +2,24 @@
 
 Welcome to MarkdownMapper! Your directory guide in the world of markdown! 🎉
 
+
 ## About 📚
 
 MarkdownMapper is a Python script that generates a `README.md` file with an index of all the non-hidden parent directories in a given directory. It's your personal compass for navigating your project directories! 🧭
 
 ## Usage 🖥️
 
-To use MarkdownMapper, run the script with the `-d` option followed by the directory you want to map:
+To use MarkdownMapper, run the script with the `-d` option followed by the directory you want to map. Addtional option `-o` to specify the output file:
 
 ```bash
-python3 generate.py -d <path/to/dir>
+python3 generate.py -d <path/to/dir> -o output.md
 ```
-If no directory is provided, the script defaults to the current directory. 
+If no directory is provided, the script defaults to the current directory.
+
+<div align="center">
+<h1 align="center">
+<img src="media/run.gif" width="500" />
+
 
 ## Output 📄
 
