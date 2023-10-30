@@ -17,7 +17,7 @@ python3 generate.py -d <path/to/dir> -o output.md
 If no directory is provided, the script defaults to the current directory.
 
 <div align="center">
-<img src="media/run.gif" width="500" />
+<img src="media/run.gif" width="1500" />
 </div>
 
 ## Output 📄
