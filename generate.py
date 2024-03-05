@@ -5,7 +5,7 @@ from pathlib import Path
 
 def generate_readme(directory: str, output_file: str):
     directory_path = Path(directory)
-    with open(directory_path / output_file, "w") as f:
+    with open(directory_path / output_file, "a+") as f:
         f.write("| Directory | Link |\n")
         # table header
         f.write("| --- | --- |\n")
